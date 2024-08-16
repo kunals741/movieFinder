@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Loco Assignment</string>
+    <string name="header">Find Movies, Tv series, and more..</string>
+    <string name="search_icon">search icon</string>
+    <string name="lord_of_the_rings">Lord of the rings</string>
+    <string name="search_result">Search Result</string>
+    <string name="toggle">toggle</string>
+    <string name="type">Type:</string>
+    <string name="year">Year:</string>
+    <string name="no_results_found">No Results Found</string>
+</resources>

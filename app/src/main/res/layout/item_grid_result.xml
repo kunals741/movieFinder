@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dim_20"
+    android:layout_marginEnd="@dimen/dim_10"
+    android:background="@color/color_15141F">
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/ic_broken_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="@dimen/dim_0"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_18"
+        android:textStyle="bold"
+        android:layout_marginEnd="@dimen/dim_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPoster"
+        tools:text="Avengers: Infinity War" />
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_4"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        tools:text="10" />
+
+    <ImageView
+        android:id="@+id/ivStar"
+        android:layout_width="@dimen/dim_20"
+        android:layout_height="@dimen/dim_20"
+        android:layout_marginStart="@dimen/dim_4"
+        android:src="@drawable/ic_star"
+        app:layout_constraintStart_toEndOf="@id/tvRating"
+        app:layout_constraintTop_toTopOf="@id/tvRating" />
+
+    <TextView
+        android:id="@+id/tvTypeKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintStart_toStartOf="@id/tvRating"
+        app:layout_constraintTop_toBottomOf="@id/tvRating" />
+
+    <TextView
+        android:id="@+id/tvTypeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_4"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintStart_toEndOf="@id/tvTypeKey"
+        app:layout_constraintTop_toBottomOf="@id/tvRating"
+        tools:text="Movie" />
+
+    <TextView
+        android:id="@+id/tvReleaseKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintStart_toStartOf="@id/tvRating"
+        app:layout_constraintTop_toBottomOf="@id/tvTypeKey" />
+
+    <TextView
+        android:id="@+id/tvReleaseValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_4"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintStart_toEndOf="@id/tvTypeKey"
+        app:layout_constraintTop_toBottomOf="@id/tvTypeValue"
+        tools:text="2020" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
